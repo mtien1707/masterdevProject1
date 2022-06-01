@@ -1,5 +1,4 @@
 
-
 import java.util.Scanner;
 public class M3 {
     public static Scanner scanner = new Scanner(System.in);
@@ -19,10 +18,10 @@ public class M3 {
 		QuickSort(n, mid + 1, r);
     }
     
-    public static void Swap(int[] n, int lhs, int rhs) {
-    	int temp = n[lhs];
-    	n[lhs] = n[rhs]; 
-    	n[rhs] = temp;
+    public static void Swap(int[] n, int l, int r) {
+    	int temp = n[l];
+    	n[l] = n[r]; 
+    	n[r] = temp;
     }
     
     public static int Partition(int[] n, int l, int r) {
