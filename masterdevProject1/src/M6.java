@@ -4,13 +4,10 @@ public class M6 {
     public static Scanner scanner = new Scanner(System.in);
     static void hollowCircle(int r) {
  
-        // dist represents distance to the center
         double dist;
      
-        // for horizontal movement
         for (int i = 0; i <= 2 * r; i++) {
-     
-        // for vertical movement
+
         for (int j = 0; j <= 2 * r; j++) {
             dist = Math.sqrt((i - r) * (i - r) +
                              (j - r) * (j - r));
