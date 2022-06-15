@@ -12,3 +12,11 @@
   spring.security.user.roles=admin
 ```
 
+# masterdevProject1
+## Bai4_Kafka
+###  "src\main\java\org\cuminhtien\kafka\AppConfigs.java":
+if you want to change topic and server
+```
+    public final static String bootstrapServers = "172.17.80.20:9092";
+    public final static String topicName = "customer_tiencm8";
+```
