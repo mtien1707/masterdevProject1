@@ -21,7 +21,7 @@ LIMIT 10;
 -- Search top 10 users who are oldest in SG with INDEX
 CREATE INDEX index_province ON user(province);
 SELECT * FROM user u
-WHERE u.province LIKE "H%"
+WHERE u.province = "SG"
 ORDER BY u.age DESC
 LIMIT 10;
 DROP INDEX index_province ON user;
