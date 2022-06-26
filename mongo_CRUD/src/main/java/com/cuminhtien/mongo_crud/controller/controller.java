@@ -28,10 +28,7 @@ public class controller {
         return "Added book with id: " + book.getId();
     }
 
-    @GetMapping("/findAllBook")
-    public List<book> getAllBooks() {
-        return repository.findAll();
-    }
+
 
     @GetMapping("/findBookById/{id}")
     public Optional<book> findBookById(@PathVariable String id) {
@@ -74,7 +71,7 @@ public class controller {
         return repository.findByText(name);
     }
 
-    @GetMapping("/findByPage/{pageno}/{pagesize}")
+    @GetMapping("/findAll/{pageno}/{pagesize}")
     public List<book> getBookByPage(@PathVariable int pageno, @PathVariable int pagesize) {
         return service.getAllBook(pageno, pagesize);
 //get map by publishDate desc pageable
