@@ -18,7 +18,6 @@ if you want to change topic and server
     public final static String bootstrapServers = "172.17.80.20:9092";
     public final static String topicName = "customer_tiencm8";
 ```
-# masterdevProject1
 ## Bai7_Hadoop_MapReduce
 ###  "src\main\java\org\cuminhtien\bai1\WordCount2":
 Run on IntelliJ - Edit Configurations - Build and run
