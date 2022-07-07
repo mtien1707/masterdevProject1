@@ -34,7 +34,7 @@ Run on IntelliJ - Edit Configurations - Build and run
 ```
 people.csv salary.csv output4
 ```
-### Result on Server "/tiencm8/bai1/output1"
-### Result on Server "/tiencm8/bai2/output1" , "/tiencm8/bai2/output2"
-### Result on Server "/tiencm8/bai3/output1"
+#### Result on Server "/tiencm8/bai1/output1"
+#### Result on Server "/tiencm8/bai2/output1" , "/tiencm8/bai2/output2"
+#### Result on Server "/tiencm8/bai3/output1"
 
