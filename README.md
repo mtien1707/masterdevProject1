@@ -29,9 +29,12 @@ Run on IntelliJ - Edit Configurations - Build and run
 ```
 count_distinct.csv output2 output3
 ```
-###  "src\main\java\org\cuminhtien\bai2\JoinTable":
+###  "src\main\java\org\cuminhtien\bai3\JoinTable":
 Run on IntelliJ - Edit Configurations - Build and run
 ```
 people.csv salary.csv output4
 ```
+### Result on Server "/tiencm8/bai1/output1"
+### Result on Server "/tiencm8/bai2/output1" , "/tiencm8/bai2/output2"
+### Result on Server "/tiencm8/bai3/output1"
 
