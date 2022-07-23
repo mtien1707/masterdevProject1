@@ -56,10 +56,10 @@ public class StructuredStreaming {
                 .writeStream()
                 .outputMode("append")
                 .format("parquet")
-                .option("checkpointLocation","hdfs://172.17.80.21:9000/tiencm8/data_tracking/checkpoint")
+                .option("checkpointLocation","hdfs://172.17.80.21:9000/user/tiencm8/data_tracking/checkpoint")
                 .option("compression","snappy")
                 .partitionBy("year", "month", "day", "hour")
-                .option("path", "hdfs://172.17.80.21:9000/tiencm8/data_tracking/data")
+                .option("path", "hdfs://172.17.80.21:9000/user/tiencm8/data_tracking/data")
                 .start();
 
         query.awaitTermination();
