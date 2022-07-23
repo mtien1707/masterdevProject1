@@ -43,6 +43,15 @@ people.csv salary.csv output4
 + Chạy spark_java_bigger : spark-submit --deploy-mode cluster --master yarn --class spark_java_bigger spark_java-1.0-SNAPSHOT.jar (Spark chạy với Yarn ở server 172.17.80.21 - password : 1)
 + Chạy spark_java_smaller : spark-submit --deploy-mode cluster --master yarn --class spark_java_smaller spark_java-1.0-SNAPSHOT.jar
 #### Output được save trên HDFS :
-+ /tiencm8/spark/bigger/*
-+ /tiencm8/spark/smaller/*
++ hdfs://172.17.80.21:9000/tiencm8/spark/bigger/*
++ hdfs://172.17.80.21:9000/tiencm8/spark/smaller/*
+## Bai9_Structured Streaming
++ Build file jar của project: sử dụng lệnh mvn package
++ scp file jar của project lên server (ví dụ : scp -r Spark_Streaming-1.0-SNAPSHOT.jar hadoop@172.17.80.21:/home/hadoop/tiencm8)
++ Chạy spark-submit: trên server `172.17.80.21` trong folder `/home/hadoop/tiencm8` : spark-submit --deploy-mode cluster --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.0,com.google.protobuf:protobuf-java:3.12.2 --class StructuredStreaming Spark_Streaming-1.0-SNAPSHOT.jar
+#### Checkpoint :
++ hdfs://172.17.80.21:9000/user/tiencm8/data_tracking/checkpoint
+#### Output :
++ hdfs://172.17.80.21:9000/user/tiencm8/data_tracking
+
 
