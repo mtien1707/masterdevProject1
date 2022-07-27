@@ -53,5 +53,12 @@ people.csv salary.csv output4
 + hdfs://172.17.80.21:9000/user/tiencm8/data_tracking/checkpoint
 #### Output :
 + hdfs://172.17.80.21:9000/user/tiencm8/data_tracking
+#### Câu lệnh tạo bảng Hive trên server `172.17.80.21`:
+    
+    CREATE EXTERNAL TABLE data_traking_tiencm8_2015_07_22(version string, name string, `timestamp` string, phone_id string, lon string, lat string) PARTITIONED BY (year int, day int, hour int) STORED AS PARQUET LOCATION '/user/tiencm8/data_tracking/data/year=2015/month=07/day=22';
 
+#### Câu lệnh đồng bộ dữ liệu trên hdfs với Hive metastore
+
+    MSCK REPAIR TABLE data_traking_tiencm8;
+####  `SELECT COUNT(*) FROM data_traking_tiencm8_2015_07_22;
 
