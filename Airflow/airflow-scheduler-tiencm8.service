@@ -1,4 +1,3 @@
-
 [Unit]
 Description=Airflow scheduler daemon
 After=network.target
@@ -6,7 +5,7 @@ After=network.target
 EnvironmentFile=/etc/environment
 User=tiencm8
 Type=simple
-ExecStart= /usr/local/bin/airflow scheduler
+ExecStart= /home/tiencm8/.local/bin/airflow scheduler
 Restart=on-failure
 RestartSec=5s
 PrivateTmp=true
