@@ -4,7 +4,7 @@ Trên server `172.17.80.24`
 
 user để đăng nhập vào airflow:
     
-    username: admin
+    username: admin1
 
-    password: admin
+    password: 1
 
